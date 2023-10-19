@@ -16,7 +16,7 @@ body{
 }
 
 .main{
-    width: 24rem;
+    width: 21rem;
     background-color: #ffffffa9;
     padding: 2px;
     margin: 10% auto;
@@ -52,6 +52,8 @@ button{
 
 li{
     color:#02007A;
+    margin-right: 20px;
+    text-wrap: wrap;
 }
 
 .real-link{
