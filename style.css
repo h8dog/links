@@ -3,7 +3,6 @@ body{
     margin: 0;
     font-family: 'Ubuntu Condensed', sans-serif;
     background-image: url(https://images.unsplash.com/photo-1457090673666-0e205962d75c?auto=format&fit=crop&q=80&w=1631&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-repeat: no-repeat;
     max-width: 100vw;
     max-height: 100vh;
 }
