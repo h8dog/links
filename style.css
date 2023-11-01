@@ -1,14 +1,22 @@
+:root{
+    --accent: #02007A;
+    --white: #fff;
+    --trans-white: #ffffffa9;
+    --trans-accent: #02007a94;
+    --lite-trans-accent:#02007a44;
+}
+
 body{
     padding: 0;
     margin: 0;
     font-family: 'Ubuntu Condensed', sans-serif;
-    background-image: url(https://images.unsplash.com/photo-1457090673666-0e205962d75c?auto=format&fit=crop&q=80&w=1631&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-color: var(--white);
     max-width: 100vw;
     max-height: 100vh;
 }
 
 .header-txt{
-    color:#02007A;
+    color: var(--accent);
     font-size: 1.5rem;
     width: fit-content;
     margin: auto;
@@ -16,10 +24,10 @@ body{
 
 .main{
     width: 21rem;
-    background-color: #ffffffa9;
+    background-color: var(--trans-white);
     padding: 2px;
     margin: 10% auto;
-    border:1px solid #fff;
+    border:1px solid var(--white);
 }
 
 .pfp{
@@ -41,22 +49,22 @@ button{
     width: 100%;
     margin:2px 0;
     height: 2rem;
-    color:#fff;
+    color:var(--white);
     border:0;
     font-family: 'Ubuntu Condensed', sans-serif;
     font-size: 1.25rem;
     text-align: left;
-    background-color:#02007A;
+    background-color:var(--accent);
 }
 
 li{
-    color:#02007A;
+    color:var(--accent);
     margin-right: 20px;
     text-wrap: wrap;
 }
 
 .real-link{
-    color:#02007A;
+    color:var(--accent);
 }
 
 .real-link:hover{
@@ -66,26 +74,34 @@ li{
 
 button:hover{
     cursor: pointer;
-    background-color: #02007a94;
+    background-color: var(--trans-accent);
     transition: 0.2s ease-in;
 }
 
 table{
     width: 100%;
-    color: #02007A;
-    border: 2px #02007A solid;
+    color: var(--accent);
+    border: 2px var(--accent) solid;
 }
 
 td{
     text-align: center;
-    border: 2px #02007A solid;
+    border: 2px var(--accent) solid;
 }
 
 th, .format{
-    background-color: #02007a3b;
-    border: 2px #02007A solid;
+    background-color: var(--lite-trans-accent);
+    border: 2px var(--accent) solid;
 }
 
 #commsBlock{
     display:none;
+}
+
+.credit{
+    color: var(--white);
+    text-decoration: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
