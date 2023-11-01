@@ -57,11 +57,26 @@ button{
     background-color:var(--accent);
 }
 
+ul {
+    list-style: none;
+    padding: 5px;
+  }
+
 li{
     color:var(--accent);
     margin-right: 20px;
     text-wrap: wrap;
+    padding-left: var(--icon-space);
 }
+
+li:before {
+    content: "\f005";
+    font-family: FontAwesome;
+    font-size: 15px;
+    display: inline-block;
+    margin-left: calc( var(--icon-space) * -1 );
+    width: var(--icon-space);
+  }
 
 .real-link{
     color:var(--accent);
@@ -94,8 +109,45 @@ th, .format{
     border: 2px var(--accent) solid;
 }
 
-#commsBlock{
+.operation-block{
     display:none;
+}
+
+#lore{
+    width: 95%;
+    margin: auto;
+}
+
+.section-header{
+    color: var(--accent);
+    margin: 2px auto;
+    width: fit-content;
+    size: 25px;
+    text-decoration: underline solid var(--accent) 2px;
+    text-align: center;
+}
+
+.section-header::before{
+    content: "\f005";
+    font-family: FontAwesome;
+    font-size: 15px;
+    display: inline-block;
+    margin-left: calc( var(--icon-space) * -1 );
+    width: var(--icon-space);
+}
+
+.section-header::after{
+    content: "\f005";
+    font-family: FontAwesome;
+    font-size: 15px;
+    display: inline-block;
+    margin-left: calc( var(--icon-space) * -1 );
+    width: var(--icon-space);
+}
+
+p{
+    color: var(--accent);
+    margin: 2px auto;
 }
 
 .credit{
@@ -104,4 +156,10 @@ th, .format{
     position: fixed;
     bottom: 0;
     left: 0;
+    z-index: -1;
+}
+
+#comms-example{
+    width: 95%;
+    margin: 0px 7px;
 }

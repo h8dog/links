@@ -24,7 +24,7 @@
             </div>
         </div>
         <button onclick="sectionOperation('commsBlock')"><i class="fa-solid fa-paintbrush"></i> Commissions</button>
-        <div id="commsBlock" class="commissions">
+        <div id="commsBlock" class="operation-block">
             <h1 class="header-txt">Terms of service</h1>
                 <ul>
                     <li>Payment by sending donation on boosty. <b>You can use PayPal for this</b>. <a class="real-link" href="https://telegra.ph/How-to-pay-via-boosty-using-PayPal-10-18">Detailed guide how to do it</a></li>
@@ -32,6 +32,8 @@
                     <li><b>Deadline</b> is 1 month</li>
                     <li><b>I will not draw:</b> Humans, NSFW, problematic or hatefull contend, heavy gore, more then 4 characters per drawing</li>
                     <li><b>Your character must have clear reference sheet, or fullbody flat picture</b></li>
+                    <li><b>no commercal use or reposring without creits</b></li>
+                    <li><b>let me know if</b> you don't want finished result to be finished or stay anonymous</li>
                     <li><b>You can contact me</b> on telegram or discord (both @h8dog). Firs one preferred, but second also ok</li>
                 </ul>
             <h1 class="header-txt">Prices</h1>
@@ -58,18 +60,75 @@
                   </tr>
               </table> 
             <ul>
-                <li><b>+1 character</b> = +100% of the price without background</li>
+                <li><b>+1 character</b> = +100% of the price of 1st character (without background)</li>
                 <li><b>No or simple background:</b> free <i>(gradient/fill, patterns, geometry shapes)</i></li>
                 <li>Detailed background: $10+, <i>(indoors or outdoors, price depend on complexity)</i></li>
                 <li><b>A lot</b> <i>(5+)</i> <b>of tails/eras/etc:</b> $3-12</li>
                 <li><b>Not random spots, realistic tiger stripes, complex patterns:</b> $2-5</li>
             </ul>
+            <h1 class="header-txt">Example</h1>
+            <img id="comms-example" src="example.png" alt="commission example">
             <h1 class="header-txt">In your firs message should be</h1>
             <ul>
                 <li><b>Format</b> [headshot/halfbody/fullbody is it flat/shaded]</li>
                 <li><b>Type of background</b> [simple/fetailed/no background]</li>
                 <li><b>character reference sheet</b>/toyhou.se/refsheet.net/google drive folder/google photo album</li>
             </ul>
+            <button onclick="sectionOperation('commsBlock')"><i class="fa-solid fa-xmark"></i> Close</button>
+        </div>
+        <button onclick="sectionOperation('lore')"><i class="fa-solid fa-magnifying-glass"></i> Lore</button>
+        <div id="lore" class="operation-block">
+            <button onclick="sectionOperation('crystal')"><i class="fa-solid fa-globe"></i> Crystal and world creation</button>
+            <div id="crystal" class="operation-block">
+                <h3 class="section-header">creation of Crystal</h3>
+                <p>Crystal is something that was created in result of big explosion (aka big bang) in result of reaction of something that doesn't exist anymore. It was started with something small and grow up in little crystal. Than this little cristal become two little crystals and these two became three. Clusters and clusters of little crystals it's what Crystal is. Its not just diamond, or emerald, it's every crystal we know and even crystals we don't. Crystal not even one mind (if we can call it such, Crystal don't have brain, only crystals), its millions of them. Every little crystal have it's own mind. And all of them connects into one single mind, one single Crystal. All of that controlled by something inside of Crystal. Inside of Crystal is not visible, it's can't be imagined or explained.<br>
+                    If everything above sounds difficult, it's not. Think about little crystal like computer and about Crystal like computer cluster. And software that manages little crystals to do same thing (or think about same theme) it's Crystal's inside.</p>
+                <h3 class="section-header">How everything was made</h3>
+                <p>Everything it's mede from Crystal, but not by Crystal itself. There only one thing that Crystal didn't made - it's gas (helium and hydrogen). It was made in result of same explosion. Cosmic dust it's smol parts of Crystal. And everything else was made from dust and gas. And in some point was made planets, and in some point Earth and live was made.</p>
+                <h3 class="section-header">What crystal even do?</h3>
+                <p>Existing, growing and recording information. Crystal knows everything that going on right now and everything that happened before. Not just every second or millisecond. everything. And all of that in Crystal's inside. Something we can imagine, recreate or destroy. All of that information will be on the inside forever.</p>
+                <button onclick="sectionOperation('crystal')"><i class="fa-solid fa-xmark"></i> Close</button>
+            </div>
+            <button onclick="sectionOperation('religion')"><i class="fa-regular fa-gem"></i> Religion of Crystal</button>
+            <div id="religion" class="operation-block">
+                <h3 class="section-header">Religion of God Crystal</h3>
+                <p>Religion of Crystal it's belive that was made by people in 3120 in result of knowing how everything was made. But people messed up it. They thought that Crystal made some stars and some planets. But Crystal didn't liked it's creation and destroy it. And this is how cosmic dust were made. And then they messed up it more and more and more. In 4444 humanity completely disappeared. Or at least it what was written by new population of Earth. Anthropomorphic dogs. They messed up knowledge about how universe was made more. <br>
+                    In the result: Religion of crystal it is believe that everything in universe was made by God Crystal. God Crystal it's cluster of crystals with one mind who always watching and remembering. He (in some languages she, it, they or other, God Crystal's pronouns can also depend on nationality or region) Have One big eye. This big eye have all colors that exist and even that don't. After end of a life, dog's soul going to space where it meets God Crystal. If dog was a good boy/girl/enby then they going to another galaxy and start their life again on alternative Earth. On this Earth dog will be rewarded for everything good they made and punished for everything bad. <br>
+                    Alternative Earthes it's copies of our Earth. For easy exploration, imagine alternative Earthes as servers of one game. They pretty same, some even copies each other, but some a bit different. So if you loose on one server you go to another. If you made something bad on that server, robbed someone for example, you will be robbed on next server. And if you do something good, help someone for example, someone will help you on next server.</p>
+                <h3 class="section-header">Red Crystalism</h3>
+                <p>it's a branch of Crystalizm (religion of God Crystal) that belive in existing of good and bad Earthes. If you bad - you go to bad Earth and if you good - you go to good one. Just like hell and heven. Followers of red Crystalizm believe that we must punish everyone who made something bad. Punishment depends of sub branch. Just red crystalist it's okay with just send someone in jail when radical red crystalist want all bad dogs not alive. <br>
+                    They believe that they doing good things for someone they punished and themselves. Because if they punished other dog, it means that they will be on good earth where they will be happy. And punisher will be rewarded for doing good thing. <br>
+                    this branch is pretty big and popular. A lot of dogs seeing this as just being right. Like you know, crime must be published.</p>
+                <h3 class="section-header">Alternative red Crystalizm</h3>
+                <p>followers of this branch believe that they need to punish themself by hurting themself to go to good Earth. Followers of radical alternative red Crystalizm believe that for their wrongdoings they need... um... not be alive <br>
+                    This branch it's like cult. It's popular, everyone knows about it existing, everyone know that this is bad but they anyway have too much followers.
+                </p>
+                <h3 class="section-header">Yellow Crystalism</h3>
+                <p>These doggos believe in original Crystal religion. So they trying to do more good! They also promote do good things. <br>
+                    this branch is popular, but not big.</p>
+                <h3 class="section-header">Orange crystalism</h3>
+                <p>Followers of this branch believe that if you do something bad, than you should do something good and then more then better. And if you do more good than bad then you will go to good word. And yes, they belive in good Earth and bad Earth like red crystalists. <br>
+                    pretty popular branch. You will see it's followers pretty often, even if there more followers of red Crystalizm</p>
+                <h3 class="section-header">Gray Crystalism</h3>
+                <p>Believe that even if Crystal exist, it's have nothing to do with our souls, there is no other Earthes and God Crystal it's just watching. <br>
+                    This branch is well known and amount of it's followers almost same as amount of yellow crystalists</p>
+                <h3 class="section-header">Alternative (gray) Crystalism, also godless crystalism</h3>
+                <p>almost same as gray Crystalizm but have big difference with religion of God Crystal as a whole. They believe that even if Crystal exist, it have nothing to do with our creation. And Crystal do only two thing: existing and watching. <br>
+                    pretty rare to see it's followers. Most of them are scientists who starting to understand that crystal have nothing to do with our creation. But they don't have proper proof. This is why dogs don't know how everything eas made. Everything that people discovered was destroyed in world war number five. Last world war in what people participated. After that war, they disappeared.</p>
+                    <button onclick="sectionOperation('religion')"><i class="fa-solid fa-xmark"></i> Close</button>
+            </div>
+            <button onclick="sectionOperation('dogs')"><i class="fa-solid fa-paw"></i> Evolution of dogs</button>
+            <div id="dogs" class="operation-block">
+                <h3 class="section-header">will be finished soon!</h3>
+                <p></p>
+                <button onclick="sectionOperation('dogs')"><i class="fa-solid fa-xmark"></i> Close</button>
+            </div>
+            <button onclick="sectionOperation('prism')"><i class="fa-solid fa-rainbow"></i> Prism of reality</button>
+            <div id="prism" class="operation-block">
+                <h3 class="section-header">will be finished soon!</h3>
+                <p></p>
+                <button onclick="sectionOperation('prism')"><i class="fa-solid fa-xmark"></i> Close</button>
+            </div>
         </div>
     </div>
     <a class="credit" href="https://unsplash.com/photos/trees-covered-in-snow-during-snow-season-YHfocxNBZ1M">background credit: Casey Horner @ unsplash</a>
