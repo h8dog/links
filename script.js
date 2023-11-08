@@ -1,9 +1,13 @@
-function sectionOperation(section){
-    var comms = document.getElementById(section);
-    if (comms.style.display === "block") {
-        comms.style.display = "none";
+function sectionOperation(open, close){
+    var open = document.getElementById(open);
+    var close = document.getElementById(close);
+    if (open.style.display === "block") {
+        open.style.display = "none";
     } else {
-        comms.style.display = "block";
+        open.style.display = "block";
+    }
+    if (close.style.display === "block") {
+        close.style.display = "none";
     }
 }
 
