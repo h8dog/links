@@ -13,6 +13,7 @@ body{
     transform: scale(1);
     background-image: url(https://www.goodtextures.com/cache/abb40c57/avcc09b6c4de5644dd14a.jpg);
     background-repeat: repeat;
+    background-color: var(--accent);
 }
 
 .header-txt{
@@ -20,6 +21,7 @@ body{
     font-size: 1.5rem;
     width: fit-content;
     margin: auto;
+    z-index: 1;
 }
 
 .main{
@@ -28,6 +30,7 @@ body{
     padding: 2px;
     margin: 10% auto;
     border:1px solid var(--white);
+    box-shadow: 0 0 10px var(--trans-accent);
 }
 
 .pfp{
@@ -200,20 +203,17 @@ svg{
 
 #preview{
     z-index: 9999;
-    opacity: 0;
-    display: none;
+    display: block;
     position: sticky;
-    height: 90vh;
-    top: 2.5vh;
-    left: 2.5vw;
-    text-align: center;
+    max-height: 90vh;
+    top: 5vh;
+    margin: auto;
+    box-shadow: 0 0 25px var(--accent);
 }
 
 #prevBg{
     z-index: 9998;
-    opacity: 0;
     display: none;
-    background-color:var(--trans-accent);
     position: sticky;
     height: 100vh;
     width: 100vw;

@@ -12,8 +12,9 @@
     <title>H8DOG</title>
 </head>
 <body>
-    <img onclick="preview()" id="preview" src="boosty 3.png">
-    <div onclick="preview()" id="prevBg"></div>
+    <div onclick="sectionOperation('prevBg', 'prevBg')" id="prevBg">
+        <img id="preview" src="boosty 3.png">
+    </div>
     <div class="main">
         <div class="header">
             <img class="pfp" src="pfp h8dog-min.png" alt="pfp">
@@ -84,23 +85,23 @@
                 <p><b>Click on image to zoom it!</b></p>
                 <h3 class="section-header">If you see page on russian</h3>
                 <p>99% you will see page on English, but if it's not, you can change language here</p>
-                <img onclick="gallery('boosty 0.png')" class="tutorial" src="boosty 0.png" alt="">
+                <img onclick="gallery('boosty 0.png'); sectionOperation('prevBg')" class="tutorial" src="boosty 0.png" alt="">
                 <h3 class="section-header">Step 1</h3>
                 <p>click "send tip" on the left side under pfp</p>
-                <img onclick="gallery('boosty 1.png')" class="tutorial" src="boosty 1.png" alt="">
+                <img onclick="gallery('boosty 1.png'); sectionOperation('prevBg')" class="tutorial" src="boosty 1.png" alt="">
                 <h3 class="section-header">Step 2</h3>
                 <p>Select "USD ($)" in drop down on the right side and enter amount of money you need to pay. Then click "send". You can leave "message" text area empty.
                     You need to select "USD ($)" to pay via PayPal or non russian card</p>
-                <img onclick="gallery('boosty 2.png')" class="tutorial" src="boosty 2.png" alt="">
+                <img onclick="gallery('boosty 2.png'); sectionOperation('prevBg')" class="tutorial" src="boosty 2.png" alt="">
                 <h3 class="section-header">Step 3</h3>
                 <p>Log in or sing up using any of your social medias. To do it you will need to log in any of social media you have. You will not need make a password for boosty separately</p>
-                <img onclick="gallery('boosty 3.png')" class="tutorial" src="boosty 3.png" alt="">
+                <img onclick="gallery('boosty 3.png'); sectionOperation('prevBg')" class="tutorial" src="boosty 3.png" alt="">
                 <h3 class="section-header">Step 4</h3>
                 <p>choose your payment method and continue with it. For PayPal you will need to log in to your PayPal account</p>
-                <img onclick="gallery('boosty 4.png')" class="tutorial" src="boosty 4.png" alt="">
+                <img onclick="gallery('boosty 4.png'); sectionOperation('prevBg')" class="tutorial" src="boosty 4.png" alt="">
                 <h3 class="section-header">Payment process on mobile</h3>
                 <p>There is almost no difference on mobile. Just "send tip" button is here</p>
-                <img onclick="gallery('boosty 11.png')" class="tutorial" src="boosty 11.png" alt="">
+                <img onclick="gallery('boosty 11.png'); sectionOperation('prevBg')" class="tutorial" src="boosty 11.png" alt="">
                 <button onclick="sectionOperation('boosty')"><i class="fa-solid fa-xmark"></i> Close tutorial</button>
             </div>
             <button onclick="sectionOperation('commsBlock')"><i class="fa-solid fa-xmark"></i> Close</button>
