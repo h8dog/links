@@ -39,44 +39,25 @@
                     <li><b>let me know if</b> you don't want finished result to be finished or stay anonymous</li>
                     <li><b>You can contact me</b> on telegram or discord (both @h8dog). Firs one preferred, but second also ok</li>
                 </ul>
-            <h1 class="header-txt">Prices</h1>
-            <table>
-                <tr>
-                  <th>format</th>
-                  <th>semi-shaded</th>
-                  <th>shaded</th>
-                </tr>
-                <tr>
-                  <td class="format">Headshot</td>
-                  <td>$10</td>
-                  <td>$20</td>
-                </tr>
-                <tr>
-                  <td class="format">Halfbody</td>
-                  <td>$20</td>
-                  <td>$35</td>
-                </tr>
-                <tr>
-                    <td class="format">Fullbody</td>
-                    <td>$30</td>
-                    <td>$50</td>
-                  </tr>
-              </table> 
-            <ul>
-                <li><b>+1 character</b> = +100% of the price of 1st character (without background)</li>
-                <li><b>No or simple background:</b> free <i>(gradient/fill, patterns, geometry shapes)</i></li>
-                <li>Detailed background: $10+, <i>(indoors or outdoors, price depend on complexity)</i></li>
-                <li><b>A lot</b> <i>(5+)</i> <b>of tails/eras/etc:</b> $3-12</li>
-                <li><b>Not random spots, realistic tiger stripes, complex patterns:</b> $2-5</li>
-            </ul>
-            <h1 class="header-txt">Example</h1>
-            <img id="comms-example" src="img/example.png" alt="commission example">
-            <h1 class="header-txt">In your firs message should be</h1>
-            <ul>
-                <li><b>Format</b> [headshot/halfbody/fullbody is it flat/shaded]</li>
-                <li><b>Type of background</b> [simple/detailed/no background]</li>
-                <li><b>character reference sheet</b>/toyhou.se/refsheet.net/google drive folder/google photo album</li>
-            </ul>
+            <h3 class="section-header">Price calculator</h3>
+            <p>choose what commission you want and get a price and a form</p>
+            <p>Format:</p>
+            <button onclick="commExample('headshot')" class="cmm-btn-t"><i class="fa-solid fa-user"></i> Headshot</button><button onclick="commExample('halfbody')" class="cmm-btn-t"><i class="fa-solid fa-person-dots-from-line"></i> Halfbody</button><button onclick="commExample('fullbody')" class="cmm-btn-t"><i class="fa-solid fa-person"></i> fullbody</button>
+            <p>Type:</p>
+            <button onclick="commExample('shaded')" class="cmm-btn-d"><i class="fa-solid fa-sun"></i> Shaded</button><button onclick="commExample('flat')" class="cmm-btn-d"><i class="fa-solid fa-circle"></i> Flat</button>
+            <p>Background</p>
+            <button onclick="commExample('simple')" class="cmm-btn-d"><i class="fa-solid fa-water"></i> Simple</button><button onclick="commExample('detailed')" class="cmm-btn-d"><i class="fa-solid fa-mountain-sun"></i> Detailed</button>
+            <img id="commExample" src="img/cmm/detailed_shaded.png" alt="commission example">
+            <h3 class="section-header" id="commTotal">Total: $110</h3>
+            <h3 class="section-header">Form</h3>
+            <div id="commForm"><span><p><b>Format:</b></p> <p id="commFormat">fullbody</p></span>
+<span><p><b>Type:</b></p> <p id="commType">shaded</p></span>
+<span><p><b>Background:</b></p> <p id="commBG">detailed</p></span>
+<span><p><b>Details:</b></p> <p>[idea, expressions, pose, etc.]</p></span>
+<span><p><b>Reference: [Link to reference or attachment]</p></span>
+            </div>
+            <button onclick="copyForm()"><i class="fa-solid fa-copy"></i> Copy form</button>
+            <p>Dm me edited version of this form. If you sending link instead of attachment, be sure that its conted avalible to not registered users. If you sending reference on telegram, send it as document for better quality.</p>
             <button id="openBoosty" onclick="sectionOperation('boosty')"><i class="fa-brands fa-paypal"></i>  <i class="fa-solid fa-credit-card"></i> How to pay</button>
             <div id="boosty" class="operation-block">
                 <h3 class="section-header">How to pay via boosty using PayPal</h3>
@@ -114,7 +95,7 @@
                 <p>Crystal is something that was created in result of big explosion (aka big bang) in result of reaction of something that doesn't exist anymore. It was started with something small and grow up in little crystal. Than this little cristal become two little crystals and these two became three. Clusters and clusters of little crystals it's what Crystal is. Its not just diamond, or emerald, it's every crystal we know and even crystals we don't. Crystal not even one mind (if we can call it such, Crystal don't have brain, only crystals), its millions of them. Every little crystal have it's own mind. And all of them connects into one single mind, one single Crystal. All of that controlled by something inside of Crystal. Inside of Crystal is not visible, it's can't be imagined or explained.<br>
                     If everything above sounds difficult, it's not. Think about little crystal like computer and about Crystal like computer cluster. And software that manages little crystals to do same thing (or think about same theme) it's Crystal's inside.</p>
                 <h3 class="section-header">How everything was made</h3>
-                <p>Everything it's mede from Crystal, but not by Crystal itself. There only one thing that Crystal didn't made - it's gas (helium and hydrogen). It was made in result of same explosion. Cosmic dust it's smol parts of Crystal. And everything else was made from dust and gas. And in some point was made planets, and in some point Earth and live was made.</p>
+                <p>Everything it's made from Crystal, but not by Crystal itself. There only one thing that Crystal didn't made - it's gas (helium and hydrogen). It was made in result of same explosion. Cosmic dust it's smol parts of Crystal. And everything else was made from dust and gas. And in some point was made planets, and live</p>
                 <h3 class="section-header">What crystal even do?</h3>
                 <p>Existing, growing and recording information. Crystal knows everything that going on right now and everything that happened before. Not just every second or millisecond. everything. And all of that in Crystal's inside. Something we can imagine, recreate or destroy. All of that information will be on the inside forever.</p>
                 <button onclick="sectionOperation('crystal')"><i class="fa-solid fa-xmark"></i> Close</button>
@@ -174,7 +155,7 @@
             </div>
             <div id="casey" class="operation-block">
                 <h3 class="section-header">Casey</h3>
-                <img class="ref" src="img/refs/casey.jpg" alt="">
+                <img class="ref" src="img/refs/casey.png" alt="">
                 <h3 class="section-header">General</h3>
                 <ul>
                     <li><b>Name:</b> Casey</li>
@@ -185,7 +166,7 @@
                 <h3 class="section-header">About</h3>
                 <ul>
                     <li><b>Occupation:</b> College stuent (information systems course)</li>
-                    <li><b>Location:</b> russia, East Siberia</li>
+                    <li><b>Location:</b> East Siberia</li>
                     <li><b>Likes:</b> Minecraft, web dev, punk and alt rock, chiken and turkey meat</li>
                     <li><b>Dislikes:</b> rap, tomatoes, watermelons</li>
                     <li><b>Purpose in life:</b> have money to live alone and don't bother anyone</li>
@@ -193,11 +174,11 @@
                 </ul>
                 <h3 class="section-header">physical appearance</h3>
                 <ul>
-                    <li><b>Age:</b> ???</li>
+                    <li><b>Age:</b> 18</li>
                     <li><b>Height:</b> 172cm</li>
                     <li><b>Specie:</b> Crystal dog</li>
                     <li><b>Breed:</b> East-siberian laika</li>
-                    <li><b>Crystal breed:</b> East/Niptunite laika</li>
+                    <li><b>Crystal breed:</b> East-Siberian/Niptunite laika/Barker</li>
                 </ul>
             </div>
             <div id="hate" class="operation-block">
@@ -221,7 +202,7 @@
                 </ul>
                 <h3 class="section-header">physical appearance</h3>
                 <ul>
-                    <li><b>Age:</b> Casey's age + 6 month</li>
+                    <li><b>Age:</b> 19/Casey's age+1 year</li>
                     <li><b>Height:</b> 162cm/Casey's height-11cm</li>
                     <li><b>Specie:</b> Crystal dog</li>
                     <li><b>Breed:</b> Russo-european laika</li>
