@@ -77,5 +77,4 @@ function commExample(duck){
 function copyForm(){
     var text = document.getElementById('commForm').textContent;
     navigator.clipboard.writeText(text);
-    alert(text);
 }
