@@ -78,3 +78,7 @@ function copyForm(){
     var text = document.getElementById('commForm').textContent;
     navigator.clipboard.writeText(text);
 }
+
+function copyColor(color){
+    navigator.clipboard.writeText(color);
+}
