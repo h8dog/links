@@ -28,7 +28,7 @@
         </div>
         <button onclick="sectionOperation('commsBlock')"><i class="fa-solid fa-paintbrush"></i> Commissions</button>
         <div id="commsBlock" class="operation-block">
-            <h1 class="header-txt">Terms of service</h1>
+            <h3 class="header-txt">Terms of service</h3>
                 <ul>
                     <li>Payment by sending donation on boosty. <b>You can use PayPal for this</b>. <a onclick="sectionOperation('boosty')" class="real-link" href="#openBoosty">Detailed guide how to do it</a></li>
                     <li><b>No refunds</b></li>
@@ -39,52 +39,75 @@
                     <li><b>let me know if</b> you don't want finished result to be finished or stay anonymous</li>
                     <li><b>You can contact me</b> on telegram or discord (both @h8dog). Firs one preferred, but second also ok</li>
                 </ul>
-            <h3 class="section-header">Price calculator</h3>
-            <p>choose what commission you want and get a price and a form</p>
-            <p>Format:</p>
-            <button onclick="commExample('headshot')" class="cmm-btn-t"><i class="fa-solid fa-user"></i> Headshot</button><button onclick="commExample('halfbody')" class="cmm-btn-t"><i class="fa-solid fa-person-dots-from-line"></i> Halfbody</button><button onclick="commExample('fullbody')" class="cmm-btn-t"><i class="fa-solid fa-person"></i> fullbody</button>
-            <p>Type:</p>
-            <button onclick="commExample('shaded')" class="cmm-btn-d"><i class="fa-solid fa-sun"></i> Shaded</button><button onclick="commExample('flat')" class="cmm-btn-d"><i class="fa-solid fa-circle"></i> Flat</button>
-            <p>Background</p>
-            <button onclick="commExample('simple')" class="cmm-btn-d"><i class="fa-solid fa-water"></i> Simple</button><button onclick="commExample('detailed')" class="cmm-btn-d"><i class="fa-solid fa-mountain-sun"></i> Detailed</button>
-            <img id="commExample" src="img/cmm/detailed_shaded.png" alt="commission example">
-            <h3 class="section-header" id="commTotal">Total: $110</h3>
-            <h3 class="section-header">Form</h3>
-            <div id="commForm"><span><p><b>Format:</b></p> <p id="commFormat">fullbody</p></span>
+                <button id="openBoosty" onclick="sectionOperation('boosty')"><i class="fa-brands fa-paypal"></i>  <i class="fa-solid fa-credit-card"></i> How to pay</button>
+                <div id="boosty" class="operation-block">
+                    <h3 class="section-header">How to pay via boosty using PayPal</h3>
+                    <p>This is detailed guide with pictures and red arrows how to pay via boosty. You can use PayPal or card for this. <b>I will not explain how to use PayPal here.</b><br>
+                    <b>Short version:</b> you need just send a tip using PayPal (or card). Also you'll need to log in or register on boosty. It's not require a password, you need just log in to your google, twitch or youtube account.</p>
+                    <p><b>Click on image to make it full screen!</b></p>
+                    <h3 class="section-header">If you see page on russian</h3>
+                    <p>99% you will see page on English, but if it's not, you can change language here</p>
+                    <img onclick="gallery('img/tutorial/boosty 0.png'); sectionOperation('prevBg')" class="tutorial" src="img/tutorial/boosty 0.png" alt="">
+                    <h3 class="section-header">Step 1</h3>
+                    <p>click "send tip" on the left side under pfp</p>
+                    <img onclick="gallery('img/tutorial/boosty 1.png'); sectionOperation('prevBg')" class="tutorial" src="img/tutorial/boosty 1.png" alt="">
+                    <h3 class="section-header">Step 2</h3>
+                    <p>Select "USD ($)" in drop down on the right side and enter amount of money you need to pay. Then click "send". You can leave "message" text area empty.
+                        You need to select "USD ($)" to pay via PayPal or non russian card</p>
+                    <img onclick="gallery('img/tutorial/boosty 2.png'); sectionOperation('prevBg')" class="tutorial" src="img/tutorial/boosty 2.png" alt="">
+                    <h3 class="section-header">Step 3</h3>
+                    <p>Log in or sing up using any of your social medias. To do it you will need to log in any of social media you have. You will not need make a password for boosty separately</p>
+                    <img onclick="gallery('img/tutorial/boosty 3.png'); sectionOperation('prevBg')" class="tutorial" src="img/tutorial/boosty 3.png" alt="">
+                    <h3 class="section-header">Step 4</h3>
+                    <p>choose your payment method and continue with it. For PayPal you will need to log in to your PayPal account</p>
+                    <img onclick="gallery('img/tutorial/boosty 4.png'); sectionOperation('prevBg')" class="tutorial" src="img/tutorial/boosty 4.png" alt="">
+                    <h3 class="section-header">Payment process on mobile</h3>
+                    <p>There is almost no difference on mobile. Just "send tip" button is here</p>
+                    <img onclick="gallery('img/tutorial/boosty 1 1.png'); sectionOperation('prevBg')" class="tutorial" src="img/tutorial/boosty 1 1.png" alt="">
+                    <button onclick="sectionOperation('boosty')"><i class="fa-solid fa-xmark"></i> Close tutorial</button>
+                </div>
+            <h3 class="header-txt">Commission types</h3>
+            <button onclick="sectionOperation('pngComms')"><i class="fa-solid fa-palette"></i>  Art</button>
+            <div id="pngComms" class="operation-block">
+                <h3 class="section-header">Price calculator</h3>
+                <p>choose what commission you want and get a price and a form</p>
+                <p>Format:</p>
+                <button onclick="commExample('headshot')" class="cmm-btn-t"><i class="fa-solid fa-user"></i> Headshot</button><button onclick="commExample('halfbody')" class="cmm-btn-t"><i class="fa-solid fa-person-dots-from-line"></i> Halfbody</button><button onclick="commExample('fullbody')" class="cmm-btn-t"><i class="fa-solid fa-person"></i> fullbody</button>
+                <p>Type:</p>
+                <button onclick="commExample('shaded')" class="cmm-btn-d"><i class="fa-solid fa-sun"></i> Shaded</button><button onclick="commExample('flat')" class="cmm-btn-d"><i class="fa-solid fa-circle"></i> Flat</button>
+                <p>Background</p>
+                <button onclick="commExample('simple')" class="cmm-btn-d"><i class="fa-solid fa-water"></i> Simple</button><button onclick="commExample('detailed')" class="cmm-btn-d"><i class="fa-solid fa-mountain-sun"></i> Detailed</button>
+                <img id="commExample" src="img/cmm/detailed_shaded.png" alt="commission example">
+                <h3 class="section-header" id="commTotal">Total: $110</h3>
+                <h3 class="section-header">Form</h3>
+                <div id="commForm"><p><b>Art commission</b>
+<span><p><b>Format:</b></p> <p id="commFormat">fullbody</p></span>
 <span><p><b>Type:</b></p> <p id="commType">shaded</p></span>
 <span><p><b>Background:</b></p> <p id="commBG">detailed</p></span>
 <span><p><b>Details:</b></p> <p>[idea, expressions, pose, etc.]</p></span>
 <span><p><b>Reference: [Link to reference or attachment]</p></span></div>
-            <button onclick="copyForm()"><i class="fa-solid fa-copy"></i> Copy form</button>
-            <p>Dm me edited version of this form. If you sending link instead of attachment, be sure that its conted avalible to not registered users. If you sending reference on telegram, send it as document for better quality.</p>
-            <button id="openBoosty" onclick="sectionOperation('boosty')"><i class="fa-brands fa-paypal"></i>  <i class="fa-solid fa-credit-card"></i> How to pay</button>
-            <div id="boosty" class="operation-block">
-                <h3 class="section-header">How to pay via boosty using PayPal</h3>
-                <p>This is detailed guide with pictures and red arrows how to pay via boosty. You can use PayPal or card for this. <b>I will not explain how to use PayPal here.</b><br>
-                <b>Short version:</b> you need just send a tip using PayPal (or card). Also you'll need to log in or register on boosty. It's not require a password, you need just log in to your google, twitch or youtube account.</p>
-                <p><b>Click on image to make it full screen!</b></p>
-                <h3 class="section-header">If you see page on russian</h3>
-                <p>99% you will see page on English, but if it's not, you can change language here</p>
-                <img onclick="gallery('img/tutorial/boosty 0.png'); sectionOperation('prevBg')" class="tutorial" src="img/tutorial/boosty 0.png" alt="">
-                <h3 class="section-header">Step 1</h3>
-                <p>click "send tip" on the left side under pfp</p>
-                <img onclick="gallery('img/tutorial/boosty 1.png'); sectionOperation('prevBg')" class="tutorial" src="img/tutorial/boosty 1.png" alt="">
-                <h3 class="section-header">Step 2</h3>
-                <p>Select "USD ($)" in drop down on the right side and enter amount of money you need to pay. Then click "send". You can leave "message" text area empty.
-                    You need to select "USD ($)" to pay via PayPal or non russian card</p>
-                <img onclick="gallery('img/tutorial/boosty 2.png'); sectionOperation('prevBg')" class="tutorial" src="img/tutorial/boosty 2.png" alt="">
-                <h3 class="section-header">Step 3</h3>
-                <p>Log in or sing up using any of your social medias. To do it you will need to log in any of social media you have. You will not need make a password for boosty separately</p>
-                <img onclick="gallery('img/tutorial/boosty 3.png'); sectionOperation('prevBg')" class="tutorial" src="img/tutorial/boosty 3.png" alt="">
-                <h3 class="section-header">Step 4</h3>
-                <p>choose your payment method and continue with it. For PayPal you will need to log in to your PayPal account</p>
-                <img onclick="gallery('img/tutorial/boosty 4.png'); sectionOperation('prevBg')" class="tutorial" src="img/tutorial/boosty 4.png" alt="">
-                <h3 class="section-header">Payment process on mobile</h3>
-                <p>There is almost no difference on mobile. Just "send tip" button is here</p>
-                <img onclick="gallery('img/tutorial/boosty 1 1.png'); sectionOperation('prevBg')" class="tutorial" src="img/tutorial/boosty 1 1.png" alt="">
-                <button onclick="sectionOperation('boosty')"><i class="fa-solid fa-xmark"></i> Close tutorial</button>
+                <button onclick="copyForm('art')"><i class="fa-solid fa-copy"></i> Copy form</button>
+                <p>Dm me edited version of this form. If you sending link instead of attachment, be sure that its conted avalible to not registered users. If you sending reference on telegram, send it as document for better quality.</p>
             </div>
-            <button onclick="sectionOperation('commsBlock')"><i class="fa-solid fa-xmark"></i> Close</button>
+            <button onclick="sectionOperation('gifComms')"><i class="fa-solid fa-film"></i>  Animation</button>
+            <div id="gifComms" class="operation-block">
+                <h3 class="section-header">Price calculator</h3>
+                <p>choose what commission you want and get a price and a form. Only simple background for animations! You can request no background</p>
+                <p>Format:</p>
+                <button onclick="GIFcommExample('headshot')" class="cmm-btn-d"><i class="fa-solid fa-user"></i> Headshot</button><button onclick="GIFcommExample('halfbody')" class="cmm-btn-d"><i class="fa-solid fa-person-dots-from-line"></i> Halfbody</button>
+                <p>Type:</p>
+                <button onclick="GIFcommExample('shaded')" class="cmm-btn-d"><i class="fa-solid fa-sun"></i> Shaded</button><button onclick="GIFcommExample('flat')" class="cmm-btn-d"><i class="fa-solid fa-circle"></i> Flat</button>
+                <img id="GIFcommExample" src="img/gif/shaded.gif" alt="commission example">
+                <h3 class="section-header" id="GIFcommTotal">Total: $110</h3>
+                <h3 class="section-header">Form</h3>
+                <div id="GIFcommForm"><p><b>Animation commission</b>
+<span><p><b>Format:</b></p> <p id="GIFcommFormat">halfbody</p></span>
+<span><p><b>Type:</b></p> <p id="GIFcommType">shaded</p></span>
+<span><p><b>Details:</b></p> <p>[idea, expressions, poses, etc.]</p></span>
+<span><p><b>Reference: [Link to reference or attachment]</p></span></div>
+                <button onclick="copyForm('gif')"><i class="fa-solid fa-copy"></i> Copy form</button>
+                <p>Dm me edited version of this form. If you sending link instead of attachment, be sure that its conted avalible to not registered users. If you sending reference on telegram, send it as document for better quality.</p>
+            </div>
         </div>
         <button onclick="sectionOperation('lore')"><i class="fa-solid fa-magnifying-glass"></i> Lore</button>
         <div id="lore" class="operation-block">

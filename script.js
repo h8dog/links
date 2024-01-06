@@ -74,8 +74,51 @@ function commExample(duck){
     commImg.src = `img/cmm/${commBG.textContent}_${commType.textContent}.png`;
 }
 
-function copyForm(){
-    var text = document.getElementById('commForm').textContent;
+function GIFcommExample(duck){
+    var commImg = document.getElementById('GIFcommExample');
+    var price = document.getElementById('GIFcommTotal');
+    var commFormat = document.getElementById('GIFcommFormat');
+    var commType = document.getElementById('GIFcommType');
+    var shadingPrice = 20;
+    var formatPrice = 30;
+    if(duck == 'flat' || duck == 'shaded'){
+        commType.innerHTML = duck;
+    }
+    else{
+        commFormat.innerHTML = duck;
+        if (duck == 'headshot'){
+            commImg.style.height = '225px';
+        }
+        else{
+            commImg.style.height = '100%';
+        }
+    }
+
+    if(commFormat.innerHTML == 'headshot'){
+        formatPrice = 20;
+        shadingPrice = 15;
+    }
+    else{
+        formatPrice = 30;
+        shadingPrice = 20;
+    }
+    if(commType.innerHTML == 'flat'){
+        shadingPrice = 0;
+    }
+    total = formatPrice + shadingPrice;
+    price.textContent = `Total: $${total}`
+    commImg.src = `img/gif/${commType.textContent}.gif`;
+}
+
+function copyForm(arg){
+    var text;
+    if(arg == 'art'){
+        text = document.getElementById('commForm').textContent;
+    }
+    else if(arg == 'gif'){
+        text = document.getElementById('GIFcommForm').textContent;
+        
+    }
     navigator.clipboard.writeText(text);
 }
 
