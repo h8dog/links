@@ -28,69 +28,44 @@
         </div>
         <button onclick="sectionOperation('commsBlock')"><i class="fa-solid fa-paintbrush"></i> Commissions</button>
         <div id="commsBlock" class="operation-block">
-            <h3 class="header-txt">Terms of service</h3>
-                <ul>
-                    <li>Payment by sending donation on boosty. <b>You can use PayPal for this</b>. <a onclick="sectionOperation('boosty')" class="real-link" href="#openBoosty">Detailed guide how to do it</a></li>
-                    <li><b>No refunds</b></li>
-                    <li><b>Deadline</b> is 1 month</li>
-                    <li><b>I will not draw:</b> Humans, NSFW, problematic or hatefull contend, heavy gore, more then 4 characters per drawing</li>
-                    <li><b>Your character must have clear reference sheet, or fullbody flat picture</b></li>
-                    <li><b>no commercal use or reposring without creits</b></li>
-                    <li><b>let me know if</b> you don't want finished result to be finished or stay anonymous</li>
-                    <li><b>You can contact me</b> on telegram or discord (both @h8dog). Firs one preferred, but second also ok</li>
-                </ul>
-                
-<h3 class="section-header">Price calculator</h3>
-                <p>choose what commission you want and get a price and a form</p>
-				<p>Animation</p>
-				<button onclick="commExample('art')" class="cmm-btn-d" id="artBtn"><i class="fa-solid fa-palette"></i>  Still</button><button onclick="commExample('animation')" class="cmm-btn-d" id="animatedBtn"><i class="fa-solid fa-film"></i>  Animated</button>
-                <p>Format:</p>
-                <button onclick="commExample('headshot')" class="cmm-btn-t" id="headshotBtn"><i class="fa-solid fa-user"></i> Headshot</button><button onclick="commExample('halfbody')" class="cmm-btn-t" id="halfbodyBtn"><i class="fa-solid fa-person-dots-from-line"></i> Halfbody</button><button onclick="commExample('fullbody')" class="cmm-btn-t" id="fullbodyBtn"><i class="fa-solid fa-person"></i> fullbody</button>
-                <p>Type:</p>
-                <button onclick="commExample('shaded')" class="cmm-btn-d" id="shadedBtn"><i class="fa-solid fa-sun"></i> Shaded</button><button onclick="commExample('flat')" class="cmm-btn-d" id="flatBtn"><i class="fa-solid fa-circle"></i> Flat</button>
-                <p>Background</p>
-                <button onclick="commExample('simple')" class="cmm-btn-d" id="simpleBGBtn"><i class="fa-solid fa-water"></i> Simple</button><button onclick="commExample('detailed')" class="cmm-btn-d" id="detailedBGBtn"><i class="fa-solid fa-mountain-sun"></i> Detailed</button>
-				<div id="commExample"><div id="exShade"></div></div>
-				<p>more examples of my art on my <a class="real-link" href="https://h8dog.tumblr.com/tagged/art">tumblr</a>!</p>
-                <h3 class="section-header" id="commTotal">Total: $110</h3>
-                <h3 class="section-header">Form</h3>
-                <div id="commForm"><span><p><b id="commAnimation">Art</b><p> commission</p></span>
-<span><p><b>Format:</b></p> <p id="commFormat">fullbody</p></span>
-<span><p><b>Type:</b></p> <p id="commType">shaded</p></span>
-<span><p><b>Background:</b></p> <p id="commBG">detailed</p></span>
-<span><p><b>Details:</b></p> <p>[idea, expressions, pose, etc.]</p></span>
-<span><p><b>Reference: [Link to reference or attachment]</p></span></div>
-                <button onclick="copyForm('art')"><i class="fa-solid fa-copy"></i> Copy form</button>
-                <p>Dm me edited version of this form. If you sending link instead of attachment, be sure that its conted avalible to not registered users. If you sending reference on telegram, send it as document for better quality.</p>
-                                </div>
-		<button id="openBoosty" onclick="sectionOperation('boosty')"><i class="fa-brands fa-paypal"></i>  <i class="fa-solid fa-credit-card"></i> How to pay using boosty</button>
-                <div id="boosty" class="operation-block">
-                    <h3 class="section-header">How to pay via boosty using PayPal</h3>
-                    <p>This is detailed guide with pictures and red arrows how to pay via boosty. You can use PayPal or card for this. <b>I will not explain how to use PayPal here.</b><br>
-                    <b>Short version:</b> you need just send a tip using PayPal (or card). Also you'll need to log in or register on boosty. It's not require a password, you need just log in to your google, twitch or youtube account.</p>
+			<h3 class="section-header">Commission info</h3>
+			<p>Currently this section was moved to hipolink. You can find all options and terms of service there</p>
+			<a href="https://hipolink.me/h8dog"><button><i class="fa-solid fa-arrow-up-right-from-square"></i> Hipolink</button></a><br>
+        </div>
+        <button id="openHipolink" onclick="sectionOperation('hipolink')"><i class="fa-brands fa-paypal"></i>  <i class="fa-solid fa-credit-card"></i>How to pay via hipolink using PayPal</button>
+                <div id="hipolink" class="operation-block">
+                    <h3 class="section-header">How to pay via hipolink using PayPal</h3>
+                    <p>This is detailed guide with pictures and red arrows how to pay via hipolink. You can use PayPal or card for this. <b>I will not explain how to use PayPal here.</b><br>
+                    <b>Short version:</b> you need just to select commission option you want and pay for it using PayPal (or card). You will need to enter you email for comfirmation code in process.</p>
                     <p><b>Click on image to make it full screen!</b></p>
-                    <h3 class="section-header">If you see page on russian</h3>
-                    <p>99% you will see page on English, but if it's not, you can change language here</p>
-                    <img onclick="gallery('img/tutorial/boosty 0.png'); sectionOperation('prevBg')" class="tutorial" src="img/tutorial/boosty 0.png" alt="">
                     <h3 class="section-header">Step 1</h3>
-                    <p>click "send tip" on the left side under pfp</p>
-                    <img onclick="gallery('img/tutorial/boosty 1.png'); sectionOperation('prevBg')" class="tutorial" src="img/tutorial/boosty 1.png" alt="">
+                    <p>click on pay button</p>
+                    <img onclick="gallery('img/tutorial/hipolink 1.png'); sectionOperation('prevBg')" class="tutorial" src="img/tutorial/hipolink 1.png" alt="">
                     <h3 class="section-header">Step 2</h3>
-                    <p>Select "USD ($)" in drop down on the right side and enter amount of money you need to pay. Then click "send". You can leave "message" text area empty.
-                        You need to select "USD ($)" to pay via PayPal or non russian card</p>
-                    <img onclick="gallery('img/tutorial/boosty 2.png'); sectionOperation('prevBg')" class="tutorial" src="img/tutorial/boosty 2.png" alt="">
+                    <p>Enter your email and click "send code". You will get confirmation code in a minute</p>
+                    <img onclick="gallery('img/tutorial/hipolink 2.png'); sectionOperation('prevBg')" class="tutorial" src="img/tutorial/hipolink 2.png" alt="">
                     <h3 class="section-header">Step 3</h3>
-                    <p>Log in or sing up using any of your social medias. To do it you will need to log in any of social media you have. You will not need make a password for boosty separately</p>
-                    <img onclick="gallery('img/tutorial/boosty 3.png'); sectionOperation('prevBg')" class="tutorial" src="img/tutorial/boosty 3.png" alt="">
+                    <p>Enter confirmation code from email</p>
+                    <img onclick="gallery('img/tutorial/hipolink 3.png'); sectionOperation('prevBg')" class="tutorial" src="img/tutorial/hipolink 3.png" alt="">
                     <h3 class="section-header">Step 4</h3>
-                    <p>choose your payment method and continue with it. For PayPal you will need to log in to your PayPal account</p>
-                    <img onclick="gallery('img/tutorial/boosty 4.png'); sectionOperation('prevBg')" class="tutorial" src="img/tutorial/boosty 4.png" alt="">
-                    <h3 class="section-header">Payment process on mobile</h3>
-                    <p>There is almost no difference on mobile. Just "send tip" button is here</p>
-                    <img onclick="gallery('img/tutorial/boosty 1 1.png'); sectionOperation('prevBg')" class="tutorial" src="img/tutorial/boosty 1 1.png" alt="">
-                    <button onclick="sectionOperation('boosty')"><i class="fa-solid fa-xmark"></i> Close tutorial</button>
+                    <p>Choose PayPal (or card) and click "go to payment"</p>
+                    <img onclick="gallery('img/tutorial/hipolink 4.png'); sectionOperation('prevBg')" class="tutorial" src="img/tutorial/hipolink 4.png" alt="">
+                    <h3 class="section-header">Questions and answers</h3>
+					<p><b>What is hipolink?</b></p>
+					<p>Is multi-link tool that allows to sell content</p>
+					<p><b>Why you can't just use PayPal?</b></p>
+					<p>It's blocked in my country</p>
+					<p><b>Why you don't use boosty?</b></p>
+					<p>It's doesn't work with PayPal anymore</p>
+					<p><b>What email should I use?</b></p>
+					<p>any email you have access to. Just remember what email you used. If you paying for adopt you will also get files on this email. I can send them to you directly</p>
+					<p><b>What if I get an error?</b></p>
+					<p>Send me a screenshot and explain how you get an error. I will check if payment has been sent and if not, you can try to sending it again. If it didn't work, I will contact their support team</p>
+					<p><b>Can I just try again if I get an error?</b></p>
+					<p>I don't recomend to do it. you can accidentally send it twice</p>
+                    <button onclick="sectionOperation('hipolink')"><i class="fa-solid fa-xmark"></i> Close tutorial</button>
                 </div>
-                <button onclick="sectionOperation('ocs')"><i class="fa-solid fa-paw"></i> Characters</button>
+        <button onclick="sectionOperation('ocs')"><i class="fa-solid fa-paw"></i> Characters</button>
         <div id="ocs" class="operation-block">
             <div class="header">
                 <div>
