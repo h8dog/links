@@ -162,7 +162,7 @@ p{
 }
 
 #exShade{
-	background-color: #070111be;
+	background-color: hsla(263, 94, 7, 75);
 	position: relative;
 	width: 100%;
 	height: 0;
@@ -188,6 +188,7 @@ svg{
 .oc-btn{
     width: 99%;
     margin-left: 1%;
+    background-color: #070111be;
 }
 
 .ref{
