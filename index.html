@@ -29,10 +29,43 @@
         <button onclick="sectionOperation('commsBlock')"><i class="fa-solid fa-paintbrush"></i> Commissions</button>
         <div id="commsBlock" class="operation-block">
 			<h3 class="section-header">Commission info</h3>
-			<p>Currently this section was moved to hipolink. You can find all options and terms of service there</p>
-			<a href="https://hipolink.me/h8dog"><button><i class="fa-solid fa-arrow-up-right-from-square"></i> Hipolink</button></a><br>
+            <h3 class="header-txt">Terms of service</h3>
+                <ul>
+                    <li>Payment by sending donation on boosty or via hipolink. <b>You can use PayPal for both</b>. <i>Guides are below!</i></li>
+                    <li><b>No refunds</b></li>
+                    <li><b>Deadline</b> is 1 month</li>
+                    <li><b>I will not draw:</b> Humans, NSFW, problematic or hatefull contend, heavy gore, more then 4 characters per drawing</li>
+                    <li><b>Your character must have clear reference sheet, or fullbody flat picture</b></li>
+                    <li><b>no commercal use or reposring without creits</b></li>
+                    <li><b>let me know if</b> you don't want finished result to be finished or stay anonymous</li>
+                    <li><b>You can contact me</b> on telegram or discord. Firs one preferred, but second also ok</li>
+                </ul>
+			<h1 class="header-txt">Prices</h1>
+            <table>
+                <tr>
+                  <th>format</th>
+                  <th>semi-shaded</th>
+                  <th>shaded</th>
+                </tr>
+                <tr>
+                  <td class="format">Headshot</td>
+                  <td>$15</td>
+                  <td>$25</td>
+                </tr>
+                <tr>
+                  <td class="format">Halfbody</td>
+                  <td>$30</td>
+                  <td>$45</td>
+                </tr>
+                <tr>
+                    <td class="format">Fullbody</td>
+                    <td>$45</td>
+                    <td>$65</td>
+                  </tr>
+              </table> 
+              <p>detailed background: +$20</p>
         </div>
-        <button id="openHipolink" onclick="sectionOperation('hipolink')"><i class="fa-brands fa-paypal"></i>  <i class="fa-solid fa-credit-card"></i>How to pay via hipolink using PayPal</button>
+        <button id="openHipolink" onclick="sectionOperation('hipolink')"><i class="fa-brands fa-paypal"></i>  <i class="fa-solid fa-credit-card"></i>How to pay via hipolink</button>
                 <div id="hipolink" class="operation-block">
                     <h3 class="section-header">How to pay via hipolink using PayPal</h3>
                     <p>This is detailed guide with pictures and red arrows how to pay via hipolink. You can use PayPal or card for this. <b>I will not explain how to use PayPal here.</b><br>
@@ -65,89 +98,34 @@
 					<p>I don't recomend to do it. you can accidentally send it twice</p>
                     <button onclick="sectionOperation('hipolink')"><i class="fa-solid fa-xmark"></i> Close tutorial</button>
                 </div>
-        <button onclick="sectionOperation('ocs')"><i class="fa-solid fa-paw"></i> Characters</button>
-        <div id="ocs" class="operation-block">
-            <div class="header">
-                <div>
-                    <img class="oc" src="img/icons/casey.png" alt="casey">
-                    <button onclick="sectionOperation('casey', 'hate')" class="oc-btn"><i class="fa-solid fa-bolt-lightning"></i> Casey</button>
+                <button id="openBoosty" onclick="sectionOperation('boosty')"><i class="fa-brands fa-paypal"></i>  <i class="fa-solid fa-credit-card"></i> How to pay via boosty</button>
+                <div id="boosty" class="operation-block">
+                    <h3 class="section-header">How to pay via boosty using PayPal</h3>
+                    <p>This is detailed guide with pictures and red arrows how to pay via boosty. You can use PayPal or card for this. <b>I will not explain how to use PayPal here.</b><br>
+                    <b>Short version:</b> you need just send a tip using PayPal (or card). Also you'll need to log in or register on boosty. It's not require a password, you need just log in to your google, twitch or youtube account.</p>
+                    <p><b>Click on image to make it full screen!</b></p>
+                    <h3 class="section-header">If you see page on russian</h3>
+                    <p>99% you will see page on English, but if it's not, you can change language here</p>
+                    <img onclick="gallery('img/tutorial/boosty 0.png'); sectionOperation('prevBg')" class="tutorial" src="img/tutorial/boosty 0.png" alt="">
+                    <h3 class="section-header">Step 1</h3>
+                    <p>click "send tip" on the left side under pfp</p>
+                    <img onclick="gallery('img/tutorial/boosty 1.png'); sectionOperation('prevBg')" class="tutorial" src="img/tutorial/boosty 1.png" alt="">
+                    <h3 class="section-header">Step 2</h3>
+                    <p>Select "USD ($)" in drop down on the right side and enter amount of money you need to pay. Then click "send". You can leave "message" text area empty.
+                        You need to select "USD ($)" to pay via PayPal or non russian card</p>
+                    <img onclick="gallery('img/tutorial/boosty 2.png'); sectionOperation('prevBg')" class="tutorial" src="img/tutorial/boosty 2.png" alt="">
+                    <h3 class="section-header">Step 3</h3>
+                    <p>Log in or sing up using any of your social medias. To do it you will need to log in any of social media you have. You will not need make a password for boosty separately</p>
+                    <img onclick="gallery('img/tutorial/boosty 3.png'); sectionOperation('prevBg')" class="tutorial" src="img/tutorial/boosty 3.png" alt="">
+                    <h3 class="section-header">Step 4</h3>
+                    <p>choose your payment method and continue with it. For PayPal you will need to log in to your PayPal account</p>
+                    <img onclick="gallery('img/tutorial/boosty 4.png'); sectionOperation('prevBg')" class="tutorial" src="img/tutorial/boosty 4.png" alt="">
+                    <h3 class="section-header">Payment process on mobile</h3>
+                    <p>There is almost no difference on mobile. Just "send tip" button is here</p>
+                    <img onclick="gallery('img/tutorial/boosty 1 1.png'); sectionOperation('prevBg')" class="tutorial" src="img/tutorial/boosty 1 1.png" alt="">
+                    <button onclick="sectionOperation('boosty')"><i class="fa-solid fa-xmark"></i> Close tutorial</button>
                 </div>
-                <div>
-                    <img class="oc" src="img/icons/hate.png" alt="Hate">
-                    <button onclick="sectionOperation('hate', 'casey')" class="oc-btn"><i class="fa-solid fa-sun"></i> Hate</button>
-                </div>
-            </div>
-            <div id="casey" class="operation-block">
-                <h3 class="section-header">Casey</h3>
-                <img class="ref" src="img/refs/casey.png" alt="">
-                <h3 class="section-header">Color Palette</h3>
-                <p>click to copy hex code!</p>
-                <p>fur/base:</p>
-                <div class="color-palette"><button style="background-color: #706661;" onclick="copyColor('706661')"></button><button style="background-color: #b19b8b;" onclick="copyColor('b19b8b')"></button><button style="background-color: #eae7dc;" onclick="copyColor('eae7dc')"></button><button style="background-color: #f0f5f6;" onclick="copyColor('f0f5f6')"></button><button style="background-color: #4f6e66;" onclick="copyColor('4f6e66')"></button></div>
-                <p>clouthes:</p>
-                <div class="color-palette"><button style="background-color: #5c5c63;" onclick="copyColor('5c5c63')"></button><button style="background-color: #2a292d;" onclick="copyColor('2a292d')"></button><button style="background-color: #1c1b1f;" onclick="copyColor('1c1b1f')"></button></div>
-                <p>bracelets:</p>
-                <div class="color-palette"><button style="background-color: #2a292d;" onclick="copyColor('2a292d')"></button><button style="background-color: #686870;" onclick="copyColor('686870')"></button><button style="background-color: #f0f5f6;" onclick="copyColor('f0f5f6')"></button><button style="background-color: #99f045;" onclick="copyColor('99f045')"></button><button style="background-color: #8f40d0;" onclick="copyColor('8f40d0')"></button><button style="background-color: #f4e64b;" onclick="copyColor('f4e64b')"></button></div>
-                <h3 class="section-header">General</h3>
-                <ul>
-                    <li><b>Name:</b> Casey</li>
-                    <li><b>Pronouns:</b> he/they</li>
-                    <li><b>Surname:</b> ???</li>
-                    <li><b>Gender:</b> none/agender</li>
-                </ul>
-                <h3 class="section-header">About</h3>
-                <ul>
-                    <li><b>Occupation:</b> College stuent (information systems course)</li>
-                    <li><b>Location:</b> East Siberia</li>
-                    <li><b>Likes:</b> Minecraft, web dev, punk and alt rock, chiken and turkey meat</li>
-                    <li><b>Dislikes:</b> rap, tomatoes, watermelons</li>
-                    <li><b>Purpose in life:</b> have money to live alone and don't bother anyone</li>
-                    <li><b>About:</b> was little attention who*re and people pleaser. Acted like he is cool. Try not to do it again. Activley trying not to be egoistic and infantile. At least try to mask it. Anxious.</li>
-                </ul>
-                <h3 class="section-header">physical appearance</h3>
-                <ul>
-                    <li><b>Age:</b> 18</li>
-                    <li><b>Height:</b> 172cm</li>
-                    <li><b>Specie:</b> Crystal dog</li>
-                    <li><b>Breed:</b> East-siberian Barker/laika</li>
-                    <li><b>Crystal breed:</b> East-Siberian/Niptunite Barker/Laika</li>
-                </ul>
-            </div>
-            <div id="hate" class="operation-block">
-                <h3 class="section-header">Hate</h3>
-                <img class="ref" src="img/refs/hate.png" alt="">
-                <h3 class="section-header">Color palette</h3>
-                <p>click on color to copy hex code!</p>
-                <p>Fur/base:</p>
-                <div class="color-palette"><button style="background-color: #464548;" onclick="copyColor('464548')"></button><button style="background-color: #f0f5f6;" onclick="copyColor('f0f5f6')"></button><button style="background-color: #28cb68;" onclick="copyColor('28cb68')"></button></div>
-                <p>clouthes:</p>
-                <div class="color-palette"><button style="background-color: #18171b;" onclick="copyColor('18171b')"></button><button style="background-color: #201f23;" onclick="copyColor('201f23')"></button><button style="background-color: #2a292d;" onclick="copyColor('2a292d')"></button></div>
-                <h3 class="section-header">General</h3>
-                <ul>
-                    <li><b>Name:</b> Hate</li>
-                    <li><b>Pronouns:</b> he/they</li>
-                    <li><b>Surname:</b> Ostrocore</li>
-                    <li><b>Gender:</b> none/agender</li>
-                </ul>
-                <h3 class="section-header">About</h3>
-                <ul>
-                    <li><b>Occupation:</b> University stuent (information systems course)</li>
-                    <li><b>Location:</b> Canada</li>
-                    <li><b>Likes:</b> Minecraft, web dev, punk and alt rock, chiken and turkey meat</li>
-                    <li><b>Dislikes:</b> rap, tomatoes, watermelons</li>
-                    <li><b>Purpose in life:</b> probably just have life</li>
-                    <li><b>About:</b> Really likes attention. People pleaser. Acts like he is cool but also he hate themself. Anxious.</li>
-                </ul>
-                <h3 class="section-header">physical appearance</h3>
-                <ul>
-                    <li><b>Age:</b> 19/Casey's age+1 year</li>
-                    <li><b>Height:</b> 162cm/Casey's height-11cm</li>
-                    <li><b>Specie:</b> Crystal dog</li>
-                    <li><b>Breed:</b> Canadian Barker (Russo-european laika)</li>
-                    <li><b>Crystal breed:</b> Emerald barker/laika</li>
-                </ul>
-            </div>
-        </div>
+        <a href="https://toyhou.se/H8DOG"><button><i class="fa-solid fa-house"></i> Characters (ToyHou.se)</button></a>
         <button onclick="sectionOperation('socials')"><i class="fa-solid fa-globe"></i> Other socials</button>
         <div id="socials" class="operation-block">
 			<p>there is <b>all</b> sites I registered on. Even if I don't use it or it not related to art at all</p>
@@ -155,6 +133,7 @@
             <a href="https://boosty.to/h8dog"><button><i class="fa-solid fa-rocket"></i> Boosty</button></a>
             <a href="https://github.com/h8dog"><button><i class="fa-brands fa-github"></i> GitHub</button></a>
 			<a href="https://en.pronouns.page/@h8dog"><button><i class="fa-solid fa-user"></i>pronouns page</button></a>
+            <a href="https://hipolink.me/h8dog"><button><i class="fa-brands fa-github"></i> Hipolink</button></a>
             <a href="https://www.braceletbook.com/users/538852_h8dog/"><button><img src="https://static.braceletbookcdn.com/images/logo_header.png" width="15px" height="15px" alt=""> Braceletbook</button></a>
             <a href="https://friendship-bracelets.net/profile/169962"><button><i class="fa-solid fa-chevron-right"></i> Friendship bracelets</button></a>
                     </div>
